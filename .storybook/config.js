@@ -7,7 +7,7 @@ addParameters({
   },
 });
 
-const comps = require.context('@spcy/component.os-core/src', true, /.stories.tsx$/);
+const comps = require.context('@spcy/comp.os-core/src', true, /.stories.tsx$/);
 
 configure(() => {
   comps.keys().forEach(filename => comps(filename));
